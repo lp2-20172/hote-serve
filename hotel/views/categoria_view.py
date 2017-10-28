@@ -22,6 +22,8 @@ class CategoriaViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         query = self.request.query_params.get('query', '')
         queryall = (Q(nombre__icontains=query),
-                    Q(fotos__icontains=query))
+                    Q(fotos__icontains=query),
+                    Q(precio__icontains=query),
+                    Q(descripcion__icontains=query))
         queryset = self.queryset.filter(reduce(OR, queryall))
         return queryset
