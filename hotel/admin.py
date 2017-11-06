@@ -1,13 +1,13 @@
 from django.contrib import admin
-from hotel.models_raiz import Reservacion
+from hotel.models.reservacion import Reservacion
 from hotel.models.categoria import Categoria
-from hotel.models_raiz import Habitacion
-from hotel.models_raiz import DetalleReservacion
-from hotel.models_raiz import Forma_de_pago
-from hotel.models_raiz import Cliente
-from hotel.models_raiz import Venta
-from hotel.models_raiz import DetalleVenta
-from hotel.models_raiz import Doc_Type
+from hotel.models.habitacion import Habitacion
+from hotel.models.detalleReservacion import DetalleReservacion
+from hotel.models.pago import Forma_de_pago
+from hotel.models.cliente import Cliente
+from hotel.models.venta import Venta
+from hotel.models.detalleVenta import DetalleVenta
+from hotel.models.docType import Doc_Type
 
 
 # Register your models here.
