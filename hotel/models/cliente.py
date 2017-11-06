@@ -5,7 +5,7 @@ from core.models import Person
 class Cliente(models.Model):
 
     estado = models.CharField(max_length=11)
-    informacionAdicional = models.OneToOneField(Person)
+    datos_cliente = models.OneToOneField(Person)
     tipoCliente = models.CharField(max_length=11)
 
     class Meta:
@@ -13,4 +13,4 @@ class Cliente(models.Model):
         verbose_name_plural = "Clientes"
 
     def __str__(self):
-        return '%s' % (self.ruc)
+        return '%s' % (self.datos_cliente)

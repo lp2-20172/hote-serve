@@ -8,6 +8,7 @@ class Person(models.Model):
 
     first_name = models.CharField(max_length=60, blank=True, null=True)
     last_name = models.CharField(max_length=60, blank=True, null=True)
+    dni = models.CharField(max_length=8, blank=True, null=True)
     email = models.EmailField(max_length=60, blank=True, null=True)
 
     created_at = models.DateTimeField(auto_now_add=True, null=True)
