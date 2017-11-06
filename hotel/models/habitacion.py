@@ -1,13 +1,13 @@
 from django.db import models
 from .categoria import Categoria
 
-
 class Habitacion(models.Model):
 
     amueblado = models.CharField(max_length=10)
     codigo = models.CharField(max_length=10)
     estado = models.CharField(max_length=1)
     categoriaHabitacion = models.ForeignKey(Categoria)
+    
 
     class Meta:
         verbose_name = "Habitacion"

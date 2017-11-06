@@ -4,7 +4,9 @@ from django.db import models
 class Categoria(models.Model):
 
     nombre = models.CharField(max_length=60)
-    fotos = models.ImageField(blank=True)
+    imagen1 = models.ImageField(blank=True)
+    imagen2 = models.ImageField(blank=True)
+    imagen3 = models.ImageField(blank=True)
     precio = models.FloatField(default=0.0)
     descripcion = models.TextField(null=True, blank=True)
 
