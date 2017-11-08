@@ -8,7 +8,7 @@ from .views.cliente_view import ClienteViewSet
 router = routers.DefaultRouter()
 router.register(r'categorias', CategoriaViewSet)
 router.register(r'habitaciones', HabitacionViewSet)
-router.register(r'clientes', ClienteViewSet)
+router.register(r'cliente', ClienteViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
